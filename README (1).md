@@ -24,6 +24,7 @@ Pengerjaan project menggunakan bahasa python dan yang dikerjakan sebegai berikut
  Gunakan aplikasi Jupiter Notebook pada Anaconda Navigator.
  
 1. Deteksi warna pada Citra
+   
 ⁂ Pendeteksian Warna Biru
 - Import Library yang akan digunakan.
 ```bash
@@ -168,6 +169,7 @@ axs[1].set_title('Histogram Deteksi Warna Hijau')
 plt.show()
 ```
 2. Ambang Batas
+   
 ⁂ Ambang batas biru
 - - Import Library yang akan digunakan.
 ```bash
@@ -312,9 +314,6 @@ axs[1].set_title('Red, Blue, and Green Detection')
 plt.show()
 ```
 
-## Dokumentasi
-
-[Documentation](https://linktodocumentation)
 
 
 ## Screenshots
