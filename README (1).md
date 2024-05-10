@@ -329,6 +329,9 @@ plt.show()
 ```
 ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/rgb.png)
 
-
+## Penjelasan Rinci
+1. Deteksi warna pada Citra
+   ⁂ Deteksi Biru
+   
 
 
