@@ -331,9 +331,13 @@ plt.show()
 
 ## Penjelasan Rinci
 1. Deteksi warna pada Citra
+   
    ⁂ Deteksi Biru
+   
    ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/detblue.png)
+
    ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/subblue.png)
+   
 - Mengimpor library yang diperlukan:
   ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
   ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
@@ -350,8 +354,11 @@ plt.show()
 - Menampilkan keseluruhan gambar subplot menggunakan plt.show().
 
    ⁂ Deteksi Merah
+  
    ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/detred.png)
+  
    ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/subred.png)
+  
 - Mengimpor library yang diperlukan:
   ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
   ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
@@ -371,8 +378,11 @@ plt.show()
 - Terakhir, menampilkan gambar subplot keseluruhan menggunakan plt.show().
 
    ⁂ Deteksi Hijau
+  
    ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/detgreen.png)
+  
    ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/subgreen.png)
+  
 - Mengimpor library yang diperlukan:
   ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
   ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
@@ -393,7 +403,9 @@ plt.show()
 2. Ambang Batas
 
    ⁂ Ambang Batas Biru
+   
    ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/batblue.png)
+   
 - Mengimpor library yang diperlukan:
   ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
   ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
@@ -409,7 +421,9 @@ plt.show()
 - Terakhir, menampilkan gambar subplot keseluruhan menggunakan plt.show().
 
   ⁂ Ambang Batas Merah-Biru
+  
   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/batrb.png)
+  
  - Mengimpor library yang diperlukan:
   ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
   ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
@@ -426,7 +440,9 @@ plt.show()
 - Terakhir, menampilkan gambar subplot menggunakan plt.show().
 
   ⁂ Ambang Batas Merah-Biru-Hijau
+  
   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/batgrb.png)
+  
 - Mengimpor library yang diperlukan:
   ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
   ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
