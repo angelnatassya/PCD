@@ -474,7 +474,5 @@ plt.show()
 - Terakhir, gambar subplot keseluruhan ditampilkan menggunakan plt.show().
 
 
-## Modul
-![modul](https://github.com/angelnatassya/pcd_uts/blob/main/07-Image-Histogram.pdf)
 
 
