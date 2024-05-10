@@ -22,9 +22,16 @@ Pengerjaan project menggunakan bahasa python dan yang dikerjakan sebegai berikut
 ## Aplikasi
 
  Gunakan aplikasi Jupiter Notebook pada Anaconda Navigator.
- Gambar Inputan :
- ![Nama](https://github.com/angelnatassya/pcd_uts/blob/main/nm.jpg)
  
+ Gambar Inputan :
+ 
+ ![Nama](https://github.com/angelnatassya/pcd_uts/blob/main/nm.jpg)
+
+ Bukti Pengambilan Gambar :
+
+ ![Nama](https://github.com/angelnatassya/pcd_uts/blob/main/loc.jpg)
+
+
 1. Deteksi warna pada Citra
    
 ⁂ Pendeteksian Warna Biru
@@ -63,6 +70,7 @@ plt.hist(img.ravel(), 256, [0, 256])
 plt.title('Histogram Gambar Asli')
 ```
 ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogramasli.png)
+"Histogram pada gambar original menunjukkan distribusi intensitas piksel dari kiri ke kanan. Jika histogram lebih tinggi dari 200 hingga 250, itu menandakan bahwa ada banyak piksel dalam gambar yang memiliki intensitas tinggi dalam rentang tersebut. Hal ini mengindikasikan adanya area dalam gambar dengan intensitas yang signifikan di antara 200 dan 250."
 - Mask deteksi biru dan histogram
 ```bash
 plt.subplot(2, 2, 3)
@@ -76,6 +84,9 @@ plt.title('Histogram Mask Deteksi Warna Biru')
 plt.show()
 ```
 ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histoblue.png)
+"Histogram hanya berada di 0, tetapi semakin tinggi ketika naik, itu berarti bahwa sebagian besar piksel dalam gambar memiliki intensitas yang rendah, mungkin mendekati nol, namun ada beberapa piksel yang memiliki intensitas yang tinggi.
+
+Ini bisa menunjukkan bahwa gambar tersebut mungkin memiliki banyak area yang gelap atau mendekati hitam, tetapi ada beberapa titik terang yang memiliki intensitas yang cukup tinggi. Misalnya, ini bisa terjadi dalam gambar dengan latar belakang gelap di mana ada objek yang cukup terang atau terang. Histogram yang hanya berada di 0 menunjukkan bahwa gambar secara keseluruhan cenderung gelap atau memiliki intensitas rendah, sementara tingginya histogram ketika naik menunjukkan adanya area dalam gambar dengan intensitas yang lebih tinggi."
 
 
 ⁂ Pendeteksian Warna Merah
@@ -117,6 +128,7 @@ plt.hist(img.ravel(), 256, [0, 256])
 plt.title('Histogram Gambar Asli')
 ```
 ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogramasli.png)
+"Histogram pada gambar original menunjukkan distribusi intensitas piksel dari kiri ke kanan. Jika histogram lebih tinggi dari 200 hingga 250, itu menandakan bahwa ada banyak piksel dalam gambar yang memiliki intensitas tinggi dalam rentang tersebut. Hal ini mengindikasikan adanya area dalam gambar dengan intensitas yang signifikan di antara 200 dan 250."
 - Mask deteksi merah dan histogram
 ```bash
 fig, axs = plt.subplots(1, 2, figsize=(12, 6))
@@ -131,6 +143,8 @@ axs[1].set_title('Histogram Deteksi Warna Merah')
 plt.show()
 ```
 ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histored.png)
+"Histogram tersebut mengindikasikan bahwa sebagian besar piksel dalam gambar memiliki intensitas vertikal di sekitar 100, yang menandakan adanya garis vertikal atau struktur tegak lurus. Di sisi lain, intensitas horizontal di sekitar 250 menunjukkan adanya struktur horizontal atau tinggi tertentu dalam gambar. Dengan demikian, histogram tersebut memberikan gambaran tentang pola dan orientasi garis-garis dalam gambar, dengan garis vertikal mendominasi dalam hal intensitas vertikal dan struktur horizontal mendominasi dalam hal intensitas horizontal."
+
 
 ⁂ Pendeteksian Warna Hijau
 - Import Library yang akan digunakan.
@@ -165,6 +179,7 @@ plt.hist(img.ravel(), 256, [0, 256])
 plt.title('Histogram Gambar Asli')
 ```
 ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogramasli.png)
+"Histogram pada gambar original menunjukkan distribusi intensitas piksel dari kiri ke kanan. Jika histogram lebih tinggi dari 200 hingga 250, itu menandakan bahwa ada banyak piksel dalam gambar yang memiliki intensitas tinggi dalam rentang tersebut. Hal ini mengindikasikan adanya area dalam gambar dengan intensitas yang signifikan di antara 200 dan 250."
 - Mask deteksi hijau dan histogram
 ```bash
 fig, axs = plt.subplots(1, 2, figsize=(12, 6))
@@ -178,6 +193,9 @@ axs[1].set_title('Histogram Deteksi Warna Hijau')
 plt.show()
 ```
 ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogreen.png)
+"Histogram tersebut menunjukkan bahwa sebagian besar piksel dalam gambar memiliki intensitas vertikal yang cukup tinggi, mendekati nilai 80, yang menunjukkan adanya fitur vertikal yang dominan atau mungkin ada area dengan intensitas yang tinggi pada bagian vertikal gambar. Di sisi lain, intensitas horizontal di sekitar 250 menunjukkan adanya struktur horizontal yang signifikan dalam gambar. Namun, area dengan intensitas di rentang 0-50 yang datar menandakan bahwa ada sedikit perubahan intensitas di sepanjang sumbu horizontal dalam rentang tersebut."
+
+
 2. Ambang Batas
    
 ⁂ Ambang batas biru
