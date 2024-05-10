@@ -332,6 +332,110 @@ plt.show()
 ## Penjelasan Rinci
 1. Deteksi warna pada Citra
    ⁂ Deteksi Biru
-   
+   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/detblue.png)
+   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/subblue.png)
+- Mengimpor library yang diperlukan:
+  ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
+  ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
+  ▸ numpy as np: Digunakan untuk operasi numerik.
+- Membaca gambar 'nm.jpg' menggunakan cv2.imread() dan menyimpannya dalam variabel img.
+- Mengonversi gambar dari format BGR menjadi format HSV menggunakan cv2.cvtColor() dan menyimpannya dalam variabel hsv_img.
+- Mendefinisikan rentang warna biru dalam format HSV dengan lower_blue dan upper_blue.
+- Membuat masker (mask) untuk deteksi warna biru menggunakan cv2.inRange() dan menyimpannya dalam variabel mask.
+- Membuat sebuah gambar subplot dengan ukuran 2x2 menggunakan plt.figure(figsize=(12, 6)).
+- Menampilkan gambar asli di subplot (2, 2, 1) menggunakan plt.subplot() dan plt.imshow().
+- Membuat histogram dari gambar asli di subplot (2, 2, 2) menggunakan plt.hist().
+- Menampilkan masker deteksi warna biru di subplot (2, 2, 3) menggunakan plt.imshow() dengan cmap='gray' untuk menampilkan dalam skala abu-abu.
+- Membuat histogram dari masker deteksi warna biru di subplot (2, 2, 4) menggunakan plt.hist().
+- Menampilkan keseluruhan gambar subplot menggunakan plt.show().
 
+   ⁂ Deteksi Merah
+   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/detred.png)
+   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/subred.png)
+- Mengimpor library yang diperlukan:
+  ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
+  ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
+  ▸ numpy as np: Digunakan untuk operasi numerik.
+- Membaca gambar 'nm.jpg' menggunakan cv2.imread() dan menyimpannya dalam variabel img.
+- Mengonversi gambar dari format BGR menjadi format HSV menggunakan cv2.cvtColor() dan menyimpannya dalam variabel hsv_img.
+- Mendefinisikan dua rentang warna merah dalam format HSV menggunakan lower_red dan upper_red. Karena warna merah melintasi batas 0 dan 179 dalam skala Hue, dua rentang digunakan untuk menangkap seluruh rentang warna merah.
+- Membuat dua masker (mask1 dan mask2) untuk setiap rentang warna merah menggunakan cv2.inRange().
+- Menggabungkan dua masker menggunakan operasi penjumlahan elemen-wise (+) dan menyimpannya dalam variabel red_mask.
+- Membuat gambar subplot dengan ukuran 2x2 menggunakan plt.figure(figsize=(12, 6)).
+- Menampilkan gambar asli di subplot (2, 2, 1) menggunakan plt.subplot() dan plt.imshow().
+- Membuat histogram dari gambar asli di subplot (2, 2, 2) menggunakan plt.hist().
+- Membuat subplot tambahan untuk menampilkan hasil deteksi warna merah dan histogram deteksi warna merah di samping gambar asli dan histogramnya. Ini dilakukan dengan membuat sebuah gambar subplot baru menggunakan plt.subplots() dengan 1 baris dan 2 kolom.
+- Menampilkan hasil deteksi warna merah di subplot pertama menggunakan axs[0].imshow() dan axs[0].set_title(). Ini menampilkan red_mask dalam skala abu-abu.
+- Menghitung histogram dari hasil deteksi warna merah menggunakan cv2.calcHist() dan menampilkannya di subplot kedua sebagai plot garis menggunakan axs[1].plot().
+- Menetapkan judul untuk subplot kedua menggunakan axs[1].set_title().
+- Terakhir, menampilkan gambar subplot keseluruhan menggunakan plt.show().
+
+   ⁂ Deteksi Hijau
+   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/detgreen.png)
+   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/subgreen.png)
+- Mengimpor library yang diperlukan:
+  ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
+  ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
+  ▸ numpy as np: Digunakan untuk operasi numerik.
+- Membaca gambar 'nm.jpg' menggunakan cv2.imread() dan menyimpannya dalam variabel img.
+- Mengonversi gambar dari format BGR menjadi format HSV menggunakan cv2.cvtColor() dan menyimpannya dalam variabel hsv_img.
+- Mendefinisikan rentang warna hijau dalam format HSV dengan lower_green dan upper_green.
+- Membuat masker (mask) untuk deteksi warna hijau menggunakan cv2.inRange() dan menyimpannya dalam variabel green_mask.
+- Membuat sebuah gambar subplot dengan ukuran 2x2 menggunakan plt.figure(figsize=(12, 6)).
+- Menampilkan gambar asli di subplot (2, 2, 1) menggunakan plt.subplot() dan plt.imshow().
+- Membuat histogram dari gambar asli di subplot (2, 2, 2) menggunakan plt.hist().
+- Membuat subplot tambahan untuk menampilkan hasil deteksi warna hijau dan histogram deteksi warna hijau di samping gambar asli dan histogramnya. Ini dilakukan dengan membuat sebuah gambar subplot baru menggunakan plt.subplots() dengan 1 baris dan 2 kolom.
+- Menampilkan hasil deteksi warna hijau di subplot pertama menggunakan axs[0].imshow() dan axs[0].set_title(). Ini menampilkan green_mask dalam skala abu-abu.
+- Menghitung histogram dari hasil deteksi warna hijau menggunakan cv2.calcHist() dan menampilkannya di subplot kedua sebagai plot garis menggunakan axs[1].plot().
+- Menetapkan judul untuk subplot kedua menggunakan axs[1].set_title().
+- Terakhir, menampilkan gambar subplot keseluruhan menggunakan plt.show().
+
+2. Ambang Batas
+
+   ⁂ Ambang Batas Biru
+   ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/batblue.png)
+- Mengimpor library yang diperlukan:
+  ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
+  ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
+  ▸ numpy as np: Digunakan untuk operasi numerik.
+- Membaca gambar 'nm.jpg' menggunakan cv2.imread() dan menyimpannya dalam variabel img.
+- Mengonversi gambar dari format BGR menjadi format HSV menggunakan cv2.cvtColor() dan menyimpannya dalam variabel hsv_img.
+- Menggunakan fungsi cv2.bitwise_and() untuk menerapkan masker warna biru (blue_mask) pada gambar asli (img). Ini akan menghasilkan gambar yang hanya menampilkan area berwarna biru dari gambar asli.
+- Membuat sebuah gambar subplot dengan ukuran 1x2 menggunakan plt.figure(figsize=(12, 6)).
+- Menampilkan gambar dengan area berwarna biru yang telah dideteksi di subplot pertama (1, 2, 1) menggunakan plt.subplot() dan plt.imshow(). Gambar yang telah diterapkan masker warna biru diubah ke format RGB sebelum ditampilkan.
+- Menampilkan gambar asli di subplot kedua (1, 2, 2) menggunakan plt.subplot() dan plt.imshow().
+- Memberikan judul untuk setiap subplot menggunakan plt.title().
+- Menonaktifkan penanda sumbu pada kedua subplot menggunakan plt.axis('off').
+- Terakhir, menampilkan gambar subplot keseluruhan menggunakan plt.show().
+
+  ⁂ Ambang Batas Merah-Biru
+  ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/batrb.png)
+ - Mengimpor library yang diperlukan:
+  ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
+  ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
+  ▸ numpy as np: Digunakan untuk operasi numerik.
+- Membaca gambar 'nm.jpg' menggunakan cv2.imread() dan menyimpannya dalam variabel img.
+- Mengonversi gambar dari format BGR menjadi format HSV menggunakan cv2.cvtColor() dan menyimpannya dalam variabel hsv_img.
+- Mendefinisikan dua rentang warna merah dalam format HSV menggunakan nilai-nilai yang ditentukan dalam array lower_red1, upper_red1, lower_red2, dan upper_red2.
+- Menggunakan fungsi cv2.inRange() untuk membuat dua masker (mask1 dan mask2) yang menandai area gambar yang memiliki warna dalam rentang warna merah yang ditentukan.
+- Menggabungkan dua masker merah menggunakan operasi penjumlahan elemen-wise (+) dan menyimpannya dalam variabel red_mask.
+- Mendefinisikan rentang warna biru dalam format HSV menggunakan nilai-nilai yang ditentukan dalam array lower_blue dan upper_blue.
+- Menggunakan fungsi cv2.inRange() untuk membuat masker (blue_mask) yang menandai area gambar yang memiliki warna dalam rentang warna biru yang ditentukan.
+- Membuat sebuah gambar subplot dengan ukuran 1x2 menggunakan plt.subplots() dan menampilkan gambar asli di subplot pertama. Kemudian, menggunakan operasi bitwise OR (cv2.bitwise_or()) untuk menggabungkan masker merah dan biru, dan menampilkan hasil deteksi warna merah dan biru di subplot kedua.
+- Menambahkan judul untuk setiap subplot menggunakan axs[0].set_title() dan axs[1].set_title().
+- Terakhir, menampilkan gambar subplot menggunakan plt.show().
+
+  ⁂ Ambang Batas Merah-Biru-Hijau
+  ![hist](https://github.com/angelnatassya/pcd_uts/blob/main/batgrb.png)
+- Mengimpor library yang diperlukan:
+  ▸ cv2: Digunakan untuk membaca gambar dan melakukan konversi warna.
+  ▸ matplotlib.pyplot as plt: Digunakan untuk membuat plot dan menampilkan gambar.
+  ▸ numpy as np: Digunakan untuk operasi numerik.
+- Membaca gambar 'nm.jpg' menggunakan cv2.imread() dan menyimpannya dalam variabel img.
+- Mengonversi gambar dari format BGR menjadi format HSV menggunakan cv2.cvtColor() dan menyimpannya dalam variabel hsv_img.
+- Rentang warna untuk setiap warna (merah, biru, hijau) ditentukan dalam format HSV menggunakan nilai-nilai tertentu untuk lower dan upper.
+- Setiap rentang warna digunakan untuk membuat masker menggunakan fungsi cv2.inRange() yang menandai area gambar yang memiliki warna dalam rentang yang ditentukan.
+- Masker untuk setiap warna digabungkan menggunakan operasi penjumlahan elemen-wise (+). Ini dilakukan untuk mendapatkan satu masker yang menandai area gambar yang memiliki warna merah, biru, atau hijau.
+- Gambar asli dan hasil deteksi warna digambarkan dalam subplot menggunakan plt.subplots(). Gambar asli ditampilkan di subplot pertama dan hasil deteksi warna digunakan untuk menghasilkan gambar biner yang menunjukkan area dengan warna merah, biru, atau hijau di subplot kedua.
+- Terakhir, gambar subplot keseluruhan ditampilkan menggunakan plt.show().
 
