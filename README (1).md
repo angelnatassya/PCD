@@ -75,7 +75,7 @@ plt.title('Histogram Mask Deteksi Warna Biru')
 
 plt.show()
 ```
-![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histoblue)
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histoblue.png)
 
 
 ⁂ Pendeteksian Warna Merah
