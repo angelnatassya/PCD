@@ -22,6 +22,8 @@ Pengerjaan project menggunakan bahasa python dan yang dikerjakan sebegai berikut
 ## Aplikasi
 
  Gunakan aplikasi Jupiter Notebook pada Anaconda Navigator.
+ Gambar Inputan :
+ ![Nama](https://github.com/angelnatassya/pcd_uts/blob/main/nm.jpg)
  
 1. Deteksi warna pada Citra
    
@@ -60,6 +62,7 @@ plt.subplot(2, 2, 2)
 plt.hist(img.ravel(), 256, [0, 256])
 plt.title('Histogram Gambar Asli')
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogramasli.png)
 - Mask deteksi biru dan histogram
 ```bash
 plt.subplot(2, 2, 3)
@@ -72,6 +75,8 @@ plt.title('Histogram Mask Deteksi Warna Biru')
 
 plt.show()
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histoblue)
+
 
 ⁂ Pendeteksian Warna Merah
 - Import Library yang akan digunakan.
@@ -111,6 +116,7 @@ plt.subplot(2, 2, 2)
 plt.hist(img.ravel(), 256, [0, 256])
 plt.title('Histogram Gambar Asli')
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogramasli.png)
 - Mask deteksi merah dan histogram
 ```bash
 fig, axs = plt.subplots(1, 2, figsize=(12, 6))
@@ -124,6 +130,8 @@ axs[1].set_title('Histogram Deteksi Warna Merah')
 
 plt.show()
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histored.png)
+
 ⁂ Pendeteksian Warna Hijau
 - Import Library yang akan digunakan.
 ```bash
@@ -156,6 +164,7 @@ plt.subplot(2, 2, 2)
 plt.hist(img.ravel(), 256, [0, 256])
 plt.title('Histogram Gambar Asli')
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogramasli.png)
 - Mask deteksi hijau dan histogram
 ```bash
 fig, axs = plt.subplots(1, 2, figsize=(12, 6))
@@ -168,6 +177,7 @@ axs[1].set_title('Histogram Deteksi Warna Hijau')
 
 plt.show()
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/histogreen.png)
 2. Ambang Batas
    
 ⁂ Ambang batas biru
@@ -211,6 +221,8 @@ plt.axis('off')
 
 plt.show()
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/blue.png)
+
 ⁂ Pendeteksian Warna Merah-Biru
 - Import Library yang akan digunakan.
 ```bash
@@ -259,6 +271,8 @@ axs[1].set_title('Red and Blue Detection')
 
 plt.show()
 ```
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/rb.png)
+
 ⁂ Pendeteksian Warna Merah-Biru-Hijau
 - Import Library yang akan digunakan.
 ```bash
@@ -313,12 +327,7 @@ axs[1].set_title('Red, Blue, and Green Detection')
 
 plt.show()
 ```
-
-
-
-## Screenshots
-1. Gambar Inputan
-![Nama](https://github.com/angelnatassya/pcd_uts/blob/main/nm.jpg)
+![hist](https://github.com/angelnatassya/pcd_uts/blob/main/rgb.png)
 
 
 
