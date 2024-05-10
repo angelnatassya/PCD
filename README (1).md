@@ -473,3 +473,8 @@ plt.show()
 - Gambar asli dan hasil deteksi warna digambarkan dalam subplot menggunakan plt.subplots(). Gambar asli ditampilkan di subplot pertama dan hasil deteksi warna digunakan untuk menghasilkan gambar biner yang menunjukkan area dengan warna merah, biru, atau hijau di subplot kedua.
 - Terakhir, gambar subplot keseluruhan ditampilkan menggunakan plt.show().
 
+
+## Modul
+![modul](https://github.com/angelnatassya/pcd_uts/blob/main/07-Image-Histogram.pdf)
+
+
